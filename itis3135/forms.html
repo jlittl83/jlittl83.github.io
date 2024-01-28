@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Little's Joyous Lion || ITIS 3135 || Contract</title>
+    <title>Justin Little's Joyous Lion || ITIS 3135 || Forms</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -22,12 +22,44 @@
         </nav>
     </header>
     <main>
-        <h2>Contract</h2>
-        <p class="contract">I, Justin S. Little, agree to abide by the terms in my second semester 2024 ITIS 3135 section 091 Web App Design and Development with my instructor, D.I. von Briesen.
-            I understand that all work that I do on my school and personal websites will be publicly available to the world. I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
-            </p>
-            <p><i>Signed:</i>
-                  Justin S. Little, 20 January 2024 </p>
+        <h2>Forms</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label>Gender:</label>
+            <input type="checkbox" id="option1" name="checkboxOptions" value="Option 1">
+            <label for="option1">Male</label>
+            <input type="checkbox" id="option2" name="checkboxOptions" value="Option 2">
+            <label for="option2">Female</label>
+            <input type="checkbox" id="option3" name="checkboxOptions" value="Option 3">
+            <label for="option3">Other</label>
+
+            <label><br>Preferred Programming Language:</label>
+            <input type="radio" id="radioOption1" name="radioOptions" value="Radio Option 1">
+            <label for="radioOption1">Java</label>
+            <input type="radio" id="radioOption2" name="radioOptions" value="Radio Option 2">
+            <label for="radioOption2">C++</label>
+
+            <label for="selectBox"><br>Other:</label>
+            <select id="selectBox" name="selectBox">
+                <option value="option1">HTML</option>
+                <option value="option2">C*</option>
+                <option value="option3">Assembly</option>
+            </select>
+
+            <label for="resetButton"><br>Reset:</label>
+            <input type="reset" id="resetButton" value="Reset">
+
+            <label for="submitButton">Submit:</label>
+            <input type="submit" id="submitButton" value="Submit">
+        </form>
     </main>
     <footer>
         <nav>

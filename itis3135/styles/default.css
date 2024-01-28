@@ -1,17 +1,18 @@
+/* General Styles */
 body {
     background-color: #044d26;
     text-align: center;
-    color:white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
-    color:bisque;
+    color: bisque;
     text-decoration: none;
 }
 
 a:hover {
-    color:gray;
+    color: gray;
     text-decoration: none;
 }
 
@@ -19,16 +20,14 @@ main {
     padding: 10px;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
 }
 
 img {
     width: 10%;
-    height: 20%;
-    border-style: groove;
-    border-color: darkgray;
-    border-width: 5px;
+    height: auto;
+    border: 5px groove darkgray;
 }
 
 figure {
@@ -42,13 +41,13 @@ ul {
 
 .info {
     text-align: center;
-    padding: 0 100px 0 100px;
+    padding: 0 10%; /* Adjusted padding units */
 }
 
 .contract {
     font-size: 20px;
-    padding: 0 200px 0 200px;
-    margin: 0 200px 0 200px;
+    padding: 0 20%;
+    margin: 0 20%;
 }
 
 p {
@@ -56,7 +55,7 @@ p {
 }
 
 .list {
-    margin-left: 550px;
+    margin-left: 20%; /* Adjusted margin units */
     padding-top: 15px;
 }
 
@@ -64,10 +63,7 @@ ol {
     list-style-position: inside;
 }
 
-h3 {
-    text-align: center;
-}
-
+/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -89,7 +85,34 @@ tr:nth-child(even) {
     background-color: gray;
 }
 
-figure {
-    text-align: center;
-    font-style: italic;
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-bottom: 20px;
+}
+
+input[type="reset"], input[type="submit"] {
+    margin-top: 10px;
 }
