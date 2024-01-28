@@ -59,3 +59,37 @@ p {
     margin-left: 550px;
     padding-top: 15px;
 }
+
+ol {
+    list-style-position: inside;
+}
+
+h3 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
