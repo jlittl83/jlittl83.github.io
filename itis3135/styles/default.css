@@ -1,8 +1,7 @@
-/* General Styles */
 body {
     background-color: #044d26;
     text-align: center;
-    color: white;
+    color: goldenrod;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -41,7 +40,7 @@ ul {
 
 .info {
     text-align: center;
-    padding: 0 10%; /* Adjusted padding units */
+    padding: 0 10%;
 }
 
 .contract {
@@ -55,7 +54,7 @@ p {
 }
 
 .list {
-    margin-left: 20%; /* Adjusted margin units */
+    margin-left: 30%;
     padding-top: 15px;
 }
 
@@ -63,7 +62,6 @@ ol {
     list-style-position: inside;
 }
 
-/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -85,7 +83,6 @@ tr:nth-child(even) {
     background-color: gray;
 }
 
-/* Form Styles */
 form {
     max-width: 400px;
     margin: 0 auto;
