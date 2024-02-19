@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Little's Joyous Lion || ITIS 3135 || First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>First Scripts</h2>
+        <h3 id="dateTime"></h3>
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName"><br>
+        <label for="userFeeling">How are you feeling?</label>
+        <input type="text" id="userFeeling"><br>
+        <button onclick="submitInfo()">Submit</button><br>
+        <p id="greetingMessage"></p>
+        <label for="favNumber">Enter your favorite number (0-10):</label>
+        <input type="number" id="favNumber" min="0" max="10"><br>
+        <button onclick="findPolygon()">Find Polygon Name</button><br>
+        <button onclick="randomSock()">Generate a Random Sock</button>
+        <button onclick="displaySubscriptions()">Subscription Options</button>
+        <button onclick="calculateTax()">Price After Tax</button>
+        <button onclick="provideInsult()">Click Here For Fun</button>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+     </script> 
+    <script src="scripts/HTMLInclude.js"></script> 
+    <script src="scripts/firstscripts.js"></script>
+</body>
+</html>
