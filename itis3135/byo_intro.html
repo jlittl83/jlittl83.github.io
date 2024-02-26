@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Little's Joyous Lion || ITIS 3135 || BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>BYO Introduction</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Justin" required>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" placeholder="Joyous Lion" required>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" accept="image/png, image/jpeg" required><br>
+
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" placeholder="My personal best bass" required>
+
+            <label for="background">Personal Background:</label>
+            <input type="text" id="background" placeholder="I'm a student at UNCC..." required>
+
+            <label for="professional">Professional Background:</label>
+            <input type="text" id="professional" placeholder="Employee of Harris Teeter..." required>
+
+            <label for="academic">Academic Background:</label>
+            <input type="text" id="academic" placeholder="Sophomore in Computer Science at UNCC..." required>
+
+            <label for="web-dev">Background in Web Development:</label>
+            <input type="text" id="web-dev" placeholder="Some background" required>
+
+            <label for="platform">Primary Computer Platform:</label>
+            <input type="text" id="platform" placeholder="Windows" required>
+
+            <label>Courses currently taking:</label><br>
+            <div id="courses">
+                <br>
+                <label for="course-title">Course Title</label>
+                <input type="text" id="course-title" required>
+                <label for="course-desc">Course Description</label>
+                <input type="text" id="course-desc" required>
+                <button type="button" id="addCourseBtn">Add Course</button><br>
+            </div>
+
+            <label for="funny">Funny Thing About You:</label>
+            <input type="text" id="funny" placeholder="My favorite game right now is Hogwarts Legacy">
+
+            <label for="anything">Anything Else You Would Like To Add:</label>
+            <input type="text" id="anything" placeholder="I love to fish">
+
+            <label for="contract">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+            <input type="checkbox" id="contract" required>
+            <br>
+            <input type="submit" id="submitBtn" value="Submit">
+            <input type="reset" value="Reset" id="resetBtn">
+        </form>
+        <div id="userIntro"></div>
+    </main>
+    <div data-include="components/footer.html"></div> 
+    <script src="scripts/HTMLInclude.js"></script> 
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
