@@ -1,32 +1,46 @@
+/*73683b-9aadbf-13262f-6d98ba-fc5130*/
+:root {
+    --gunmetal: #13262f;
+    --fielddrab: #73683b;
+    --cadetgray: #9aadbf;
+    --airblue: #6d98ba;
+    --tomato: #e84855;
+}
+
 body {
-    background-color: #044d26;
-    color: goldenrod;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: var(--gunmetal);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--fielddrab)
 }
 
 header, footer {
     text-align: center;
+    color: var(--tomato);
 }
 
 main {
     width: 95%;
     max-width: 700px;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {
-    margin-left: 25px;
+    font-size: 25px;
 }
 
 a {
-    color: bisque;
+    color: var(--airblue);
     text-decoration: none;
 }
 
 a:hover {
-    color: gray;
+    color: var(--cadetgray);
     text-decoration: none;
 }
 
@@ -64,11 +78,11 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: gray;
+    background-color: var(--cadetgray);
 }
 
 ol {
-    margin-left: 145px;
+    margin-left: 95px;
 }
 
 form {
@@ -115,6 +129,10 @@ select {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.website {
+    margin-left: 255px;
+}
+
 /*Laptop/small screens*/
 @media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
     main {
@@ -146,4 +164,5 @@ select {
         width: 50%;
     }
 }
+
 
