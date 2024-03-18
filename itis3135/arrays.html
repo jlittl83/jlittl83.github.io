@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Little's Joyous Lion || ITIS 3135 || Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name">
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" placeholder="Enter salary"><br>
+        <label for="employeeDropdown">Select Employee:</label>
+        <select id="employeeDropdown"></select>
+        <label for="newSalary">New Salary:</label>
+        <input type="number" id="newSalary" placeholder="Enter new salary"><br>
+        <div id="results"></div>
+        <table id="results-table">
+            
+        </table>
+        <button onclick="addSalary()">Add Salary</button>
+        <button onclick="modifySalary()">Modify Salary</button>
+        <button onclick="displayResults()">Display Results</button>
+        <button onclick="displaySalary()">Display Salary</button>
+    </main>
+    <div data-include="components/footer.html"></div> 
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>
