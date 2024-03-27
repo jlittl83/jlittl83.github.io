@@ -24,7 +24,7 @@ header, footer {
 
 main {
     width: 95%;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     font-size: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -55,6 +55,11 @@ img {
     border: 5px groove darkgray;
 }
 
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
 figure {
     text-align: center;
     font-style: italic;
@@ -81,8 +86,12 @@ tr:nth-child(even) {
     background-color: var(--cadetgray);
 }
 
-ol {
-    margin-left: 95px;
+#tables {
+    margin-left: 185px;
+}
+
+#website {
+    margin-left: 364px;
 }
 
 form {
@@ -129,10 +138,6 @@ select {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.website {
-    margin-left: 255px;
-}
-
 /*Laptop/small screens*/
 @media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
     main {
@@ -140,6 +145,17 @@ select {
     }
     img {
         width: 50%;
+    }
+    .calculator-body {
+        width: 600px;
+        height: 480px;
+    }
+    .calculator-screen {
+        width: 560px;
+    }
+    .numpad {
+        height: 180px;
+        width: 280px;
     }
 }
 
@@ -152,16 +168,58 @@ select {
     img {
         width: 60%;
     }
+    .calculator-body {
+        width: 500px;
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .calculator-screen {
+        width: 460px;
+    }
+    .numpad {
+        height: 160px;
+        width: 240px;
+    }
+    .numpad button,
+    .operators button {
+        font-size: 20px;
+        width: 60px;
+    }
+    .operators button:last-of-type {
+        width: 100px;
+    }
 }
 
 /*mobile*/
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
     main {
-        width: 85%;
-        font-size: 16px;
+        width: 90%;
+        font-size: 18px;
     }
     img {
-        width: 50%;
+        width: 60%;
+    }
+    .calculator-body {
+        width: 500px;
+        height: 420px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .calculator-screen {
+        width: 460px;
+    }
+    .numpad {
+        height: 160px;
+        width: 240px;
+    }
+    .numpad button,
+    .operators button {
+        font-size: 20px;
+        width: 60px;
+    }
+    .operators button:last-of-type {
+        width: 100px;
     }
 }
 
@@ -170,9 +228,9 @@ select {
     width: 750px;
     height: 600px;
     border: 5px solid;
-    margin-left: -30px;
     text-align: center;
     border-radius: 15px;
+    margin-left: 65px;
 }
 
 .calculator-screen {
