@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    color: var(--fielddrab)
+    color: var(--fielddrab);
 }
 
 header, footer {

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Fishing</title>
+    <style>
+        /* 2e3532-df9b6d-9db5b2-84596b-773344-2A2B2A */
+        :root {
+            --onyx: #2e3532;
+            --buff: #df9b6d;
+            --ash: #9db5b2;
+            --rose: #84596b;
+            --wine: #773344;
+            --jet: #2A2B2A;
+        }
+        
+        body {
+            background-color: var(--onyx);
+            color: var(--buff);
+            font-family:Arial, Helvetica, sans-serif;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        h1 {
+            font-size: 50px;
+        }
+
+        header, footer {
+            text-align: center;
+        }
+
+        main {
+            width: 95%;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        button {
+            background-color: var(--ash);
+            color: var(--jet);
+            width: 90px;
+            height: 35px;
+        }
+
+        button:hover {
+            background-color: var(--rose);
+        }
+
+        a {
+            color: var(--ash);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--rose);
+        }
+
+        section div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            border: 5px groove var(--ash);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        figure {
+            text-align: center;
+            font-style: italic;
+        }
+
+        #about img {
+            width: 30%;
+            height: 30%;   
+        }
+
+        #home img, #time img, #how img, #why img, #location img {
+            width: 50%;
+        }
+
+        ol li{
+            padding: 10px;
+        }
+
+        #home p:nth-of-type(1) {
+            text-align: center;
+        }
+
+        #time p {
+            text-align: center;
+        }
+
+        #location p:nth-last-of-type(2) {
+            text-align: center;
+        }
+
+        #how p:nth-of-type(1) {
+            text-align: center;
+        }
+
+        #why p:nth-of-type(1) {
+            text-align: center;
+        }
+
+        @media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+            body {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            main {
+                font-size: 20px;
+            }
+
+            button {
+                width: 90px;
+                height: 30px;
+            }
+
+            #about img {
+                width: 25%;
+                height: 25%;
+            }
+
+            #home img, #time img, #how img, #why img, #location img {
+                width: 40%;
+            }
+        }
+
+        @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+            body {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            main {
+                font-size: 18px;
+            }
+
+            button {
+                width: 80px;
+                height: 25px;
+            }
+
+            #about img {
+                width: 20%;
+                height: 20%;
+            }
+
+            #home img, #time img, #how img, #why img, #location img {
+                width: 35%;
+            }
+        }
+
+        @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+            body {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            main {
+                font-size: 16px;
+            }
+
+            button {
+                width: 70px;
+                height: 20px;
+            }
+
+            #about img {
+                width: 15%;
+                height: 15%;
+            }
+
+            #home img, #time img, #how img, #why img, #location img {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Justin Little's Fishing Adventure</h1>
+        <nav>
+            <button>Home</button>
+            ||
+            <button>About Me</button>
+            ||
+            <button>Best Times</button>
+            ||
+            <button>Locations</button>
+            ||
+            <button>How</button>
+            ||
+            <button>Why</button>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <figure>
+                <img src="images/bass1.png" alt="large_mouth_bass_jumping_out_of_water">
+                <figcaption>Large Mouth Bass</figcaption>
+            </figure>
+            <p><em><a href="https://www.imagine.art/">AI </a>Prompt: Large Mouth Bass</em></p>
+            <p>Welcome to my fishing page! Bass fishing has been my passion since I was 14 years old, and it's something I absolutely love doing outdoors. Whether I'm out early in the morning or enjoying the calm waters at sunset, every fishing trip is filled with excitement and peaceful moments. Here on this website, I want to share my love for bass fishing with you. You'll find tips and techniques for finding bass such as good lures to use and good locations to fish.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <figure>
+                <img src="images/IMG_0642.jpg" alt="me_and_my_personal_best_bass">
+                <figcaption>My Personal Best Large Mouth Bass</figcaption>
+            </figure>
+            <p>I am a sophomore at UNCC completing a bachelors degree in Computer Science. My concentration is in I.T., and while I don't know what kind of job I'll end up with, I enjoy web development and will most likely persue a career in the field. I enjoy many outdoor activities such as marksmanship, hunting, hiking, and fishing. Along side outdoor activites, I also enjoy building PCs.</p>
+        </section>
+        <section id="time">
+            <h2>Best Times</h2>
+            <p>The best times to fish can vary depending on the state you live in. In my home state of NC the best times to fish are: </p>
+            <figure>
+                <img src="images/spring.png" alt="man_fishing_in_spring">
+                <figcaption>Spring Fishing</figcaption>
+            </figure>
+            <p><em><a href="https://www.imagine.art/">AI </a>Prompt: A man fishing in the spring</em></p>
+            <ul>
+                <li>Spring: Spring is typically considered one of the best times for bass fishing in NC. As the water temperatures start to warm up, bass become more active and move into shallower waters for spawning. Early spring (March to April) can be especially productive as bass are actively feeding before spawning.</li>
+            </ul>
+                <figure>
+                    <img src="images/fall.png" alt="man_fishing_in_fall">
+                    <figcaption>Fall Fishing</figcaption>
+                </figure>
+                <p><em><a href="https://www.imagine.art/">AI </a>Prompt: A man fishing in the fall</em></p>
+            <ul>
+                <li>Fall: Fall is another great season for bass fishing in NC. As the water cools down after summer, bass become more active again, feeding heavily to prepare for winter. The fall months, particularly September to November, can offer excellent bass fishing opportunities.</li>
+            </ul>
+                <figure>
+                    <img src="images/sunrise.png" alt="man_fishing_at_sunrise">
+                    <figcaption>Sunrise Fishing</figcaption>
+                </figure>
+                <p><em><a href="https://www.imagine.art/">AI </a>Prompt: A man fishing at dawn</em></p>
+            <ul>
+                <li>Early Morning and Dusk: Regardless of the season, early morning and dusk are often the best times of day for bass fishing in NC. Bass are typically more active during low light conditions and may be more willing to strike lures or baits during these times.</li>
+            </ul>
+        </section>
+        <section id="location">
+            <h2>Locations</h2>
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207689.3274130955!2d-81.12738548087826!3d35.57479445740343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856ad357f03dd69%3A0xee1f400216d78a1f!2sLake%20Norman!5e0!3m2!1sen!2sus!4v1711151446496!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <figcaption>Map of Lake Norman</figcaption>
+            </figure>
+            <p>Lake Norman is a fantastic place to fish, and it's close to Charlotte! Lake Norman is huge, covering over 32,000 acres. This allows for more diverse fishing environments. The lake's structure, including submerged islands, points, and underwater structures, creates ideal habitats where bass thrive and feed.</p>
+            <figure>
+                <img src="images/golfcourse.png" alt="golf_course_pond">
+                <figcaption>Golf course pond</figcaption>
+            </figure>
+            <p><em><a href="https://www.imagine.art/">AI </a>Prompt: golf course pond</em></p>
+            <p>Aside from lakes, bass can live in ponds, rivers, and streams. My favorite place to fish for bass are golf course ponds. If you want to fish a golf course pond, make sure you get the proper permission first.</p>
+        </section>
+        <section id="how">
+            <h2>How</h2>
+            <figure>
+                <img src="images/bass3.png" alt="large_mouth_bass_jumping_out_of_water">
+                <figcaption>Large Mouth Bass</figcaption>
+            </figure>
+            <p><em><a href="https://www.imagine.art/">AI </a>Prompt: Large Mouth Bass</em></p>
+            <p>There is no right or wrong way to fish. But some ways are easier than others. If you're a beginner, I suggest the wacky rig:</p>
+            <ol>
+                <li>Rigging: To set up a wacky rig, you'll need a soft plastic worm or bait of your choice. The most common bait used for a wacky rig is a straight-tail worm, typically around 4 to 6 inches long. You'll also need a wacky rig hook, which is a specialized hook with a circular bend and a weed guard (optional).</li>
+                <li>Hook Placement: Unlike traditional rigging where the hook is inserted through the bait's head or body, the wacky rig involves hooking the bait through the middle. Simply take your worm or bait and hook it through the center, making sure the hook point is exposed.</li>
+                <li>Technique: The wacky rig is often used with a finesse fishing approach. Cast your bait near underwater structures, vegetation, or areas where bass are likely to hide. Allow the bait to sink slowly and maintain a subtle twitching or shaking motion to mimic a wounded or struggling baitfish.</li>
+            </ol>
+            <p>Another easy rig to use is the Texas rig:</p>
+            <ol>
+                <li>Rigging: To set up a Texas rig, you'll need a soft plastic bait of your choice, such as a worm, creature bait, or crawfish imitation. You'll also need a bullet or worm weight and an offset worm hook.</li>
+                <li>Weight Placement: Start by sliding the bullet or worm weight onto your fishing line. The weight can vary in size depending on the depth and structure of the fishing area. Next, tie the offset worm hook to the line using your preferred knot.</li>
+                <li>Hooking the Bait: Take your soft plastic bait and insert the point of the hook into the head of the bait, then thread it through the body until the hook's bend is fully exposed. You can also use a bait keeper or screw-lock hook for better bait retention.</li>
+                <li>Technique: The Texas rig is highly versatile and can be used in various fishing environments, including vegetation, rocks, and submerged structures. Cast your rigged bait near potential bass hiding spots and allow it to sink to the desired depth. Use a slow retrieve with occasional pauses and twitches to mimic a natural prey item.</li>
+            </ol>
+        </section>
+        <section id="why">
+            <h2>Why</h2>
+            <figure>
+                <img src="images/bass4.png" alt="large_mouth_bass_skidding_across_the_water">
+                <figcaption>Large Mouth Bass</figcaption>
+            </figure>
+            <p><em><a href="https://www.imagine.art/">AI </a>Prompt: Large Mouth Bass</em></p>
+            <p>Fishing offers a multitude of benefits that make it a rewarding and enjoyable activity for people of all ages and backgrounds. It provides a wonderful opportunity to connect with nature and enjoy the tranquility of the outdoors. Whether you're casting your line into a serene lake or standing by a flowing river, the sights, sounds, and fresh air contribute to a relaxing and rejuvenating experience.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Page Built by <a href="jldesign.com">J.L. Design </a>&copy;2024, <a href="https://www.freecodecamp.org/certification/JustinLittle336/responsive-web-design">Certified in RWD</a></p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        <a href="https://wave.webaim.org/report#" id="validation_link_wcag">
+            <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="Valid WCAG">
+        </a>
+    </footer>
+    <script>
+        //changes the url to ensure that the current page is validated instead of just the index page
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_wcag").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+
+        //shows the section of the page visted, hides the rest
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const navButtons = document.querySelectorAll('nav button');
+            const sectionIds = ['home', 'about', 'time', 'location', 'how', 'why'];
+
+            navButtons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    showSection(sectionIds[index]);
+                });
+            });
+            
+            showSection('home'); //shows home by default
+        }); 
+    </script>
+</body>
+</html>
